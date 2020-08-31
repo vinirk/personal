@@ -1,3 +1,5 @@
+(function(){
+    
 function GetURLParameter(sParam){
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
@@ -34,3 +36,4 @@ if(ml){
     xmlhttp.send(JSON.stringify({"attributes[ml]": ml}));
     xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
 }
+})

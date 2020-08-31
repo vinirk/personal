@@ -1,6 +1,5 @@
-
-    
-function GetURLParameter(sParam){
+document.addEventListener("DOMContentLoaded", function(){
+   function GetURLParameter(sParam){
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
     for (var i = 0; i < sURLVariables.length; i++){
@@ -36,4 +35,4 @@ if(ml){
     xmlhttp.send(JSON.stringify({"attributes[ml]": ml}));
     xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
 }
-
+});

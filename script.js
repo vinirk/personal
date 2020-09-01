@@ -16,11 +16,7 @@ function callbackFunction(xmlhttp)
     if (xmlhttp.response) {
         localStorage.setItem("ad_cart", JSON.stringify({
             "data":{
-                "data":{
-                    /* Reference: http://es6-features.org/#SpreadOperator */
-                    /* copy arguments of an iterable collection */
-                    ...xmlhttp.response
-                }
+                "data": xmlhttp.response
             }
         }));
     }

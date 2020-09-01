@@ -16,7 +16,7 @@ function callbackFunction(xmlhttp)
         console.log(xmlhttp.response);
         localStorage.setItem("ad_cart", JSON.stringify({
             "data":{
-                "data": xmlhttp.response
+                "data": JSON.parse(xmlhttp.response)
             }
         }));
     }

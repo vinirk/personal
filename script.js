@@ -12,8 +12,8 @@ console.log("LOAD SCRIPT");
 
 function callbackFunction(xmlhttp) 
 {
-   console.log(xmlhttp.response);
     if (xmlhttp.response) {
+        console.log(xmlhttp.response);
         localStorage.setItem("ad_cart", JSON.stringify({
             "data":{
                 "data": xmlhttp.response
